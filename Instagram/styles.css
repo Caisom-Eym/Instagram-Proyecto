@@ -1,0 +1,507 @@
+* {    
+    font-family: 'Segoe UI';
+}
+
+body {
+    margin: 0;
+    background-color: #fefefe;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+}
+
+/* Nav */
+.nav {
+    height: 100%;
+    position: fixed;
+    border-right: 1px solid #ccc;
+    width: 17vw;
+    flex-shrink: 3;
+    flex-grow: 1;
+    /* height: 100vh; */
+}
+
+.nav__logo {
+    margin: 25px 0 15px 0;
+    width: 150px;
+    height: 37px;
+}
+
+.nav__nav-li {
+    cursor: pointer;
+    padding: 13px 7px;
+    margin: 6px 10px 6px 15px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.nav__nav-li:hover {
+    background-color: #00000015;
+}
+
+.li__item svg {
+    height: 24px;
+    width: 24px;
+    color: #000;
+}
+
+.li__item{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.li__item .img-perfil {
+    height: 24px;
+    width: 24px;
+    background-image: url(assets/Imagen/329011155_1284240439103930_8676510832735584473_n.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.li__item span {
+    color: #000;
+    padding-left: 10px;
+    margin-top: 2px;
+}
+
+.nav__nav-li:first-child span {
+    font-weight: 700;
+}
+
+/* /nav */
+
+/* Contenido de la comunidad */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17vw;
+    flex-shrink: 0;
+    flex-grow: 5;
+    height: 100vh;
+}
+
+.content__historias-container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .historias{
+        align-self: center;
+        display: flex;
+        height: max-content;
+        margin-top: 30px;
+    }
+        .h1 {
+            background: url(assets/Imagen/rulo.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h2 {
+            background: url(assets/Imagen/lucas.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+        
+        .h3 {
+            background: url(assets/Imagen/Messi.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h4 {
+            background: url(assets/Imagen/missa.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h5 {
+            background: url(assets/Imagen/Melina.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h6 {
+            background: url(assets/Imagen/cw.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h7 {
+            background: url(assets/Imagen/Rob.jpg), linear-gradient(45deg, #f0f 50%, #ff0);
+        }
+
+        .h8 {
+            background: url(assets/Imagen/pp.jpg), linear-gradient(white, white);
+        }
+
+        .container-h{
+            text-overflow: ellipsis;
+            font-size: 11px;
+            font-weight: 600;
+            overflow-x: hidden;
+            margin: 5px 6px;
+            text-align: center;
+            width: 64px;
+            height: 100px;
+        }
+
+        .h {
+           
+            user-select: none;
+            cursor: pointer;
+            border: 3px double #ccc;
+            box-sizing: border-box;
+            width: 64px;
+            height: 64px;
+            /* Fondo */
+            background-position: center center;
+            background-size: cover;
+            background-clip: content-box, border-box;
+            /* Fin del Fondo */
+            outline: 2px solid #fefefe;
+            outline-offset: -5px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        .container-h span {
+            font-weight: normal;
+            letter-spacing: normal;
+            font-size: 0.75rem;
+        }
+
+
+
+.content__publicaciones-container {
+    flex-grow: 2;
+    width: 70%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.publicaciones {
+    width: 90%;
+    margin: 20px auto 50px;
+}
+
+.pub-container {
+    border-bottom: 1px solid #aaa;
+}
+
+    .pub-cuenta {
+        align-items: center;
+        display: flex;
+        width: 95%;
+        margin: 20px auto 10px;
+
+    }
+        .pub-perfil {
+            cursor: pointer;
+            outline: 1px #eee solid;
+            color: transparent;
+            cursor: pointer;
+            user-select: none;
+            background-image: url(assets/Imagen/329011155_1284240439103930_8676510832735584473_n.jpg);
+            background-position: center center;
+            background-size: cover;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+        }
+
+        .pub-nombre {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 5px;
+            margin-bottom: 1px;
+
+        }
+
+        .pub-cuenta span {
+            color: #aaa;
+        }
+
+        .pub-tiempo {
+            cursor: pointer;
+            flex-grow: 1;
+            color: #777;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .pub-mas {
+            cursor: pointer;
+            margin-top: 5px;
+            flex-grow: 0;
+            width: 24px;
+            height: 24px;
+        }
+
+        .pub-mas svg {
+            width: 24px;
+            height: 24px;
+        }
+
+    .pub-img {
+        width: 98%;
+        border-radius: 5px;
+        height: 450px;
+        background-image: url(assets/Imagen/Prince.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin: 7px auto;
+    }
+
+    .pub-action {
+        width: 100%;
+        height: 24px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+        .action-svg {
+            fill: none;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .action-svg svg {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+        }
+
+        .action-like {
+            fill: currentColor;
+        }
+
+        .action-share {
+            flex-grow: 1;
+        }
+
+        .action-save {
+            flex-grow: 0;
+        }
+
+        .action-svg svg:hover {
+            color: #555;
+        }
+
+ /* No olvidar que los margenes se solapan - Por eso no meti margin-bottom de 5px en .pub action y 5px en el top de .pub-like span*/
+
+    .pub-like span {
+        /* margin-top: 5px;*/ /* Este margen no sirve, se solapa con el bloque de arriba */
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .pub-comment {
+        overflow: hidden;
+        margin-top: 10px;
+        width: 494px;
+        font-size: 0.9rem;
+        text-overflow: ellipsis;
+    }
+        .pub-comment-autor span:first-child {
+            font-weight: 600;
+        }
+
+    .pub-comment-box {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .pub-comment-write {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+        .pub-comment-write-textarea {
+            background-color: #fefefe;
+            font-family: sans-serif;
+            width: 75%;
+            height: 1rem;
+            resize: none;
+            outline: none;
+            border: none;
+        }
+
+        .pub-comment-write-publicar label span{
+            font-weight: 600;
+            color: transparent;
+            cursor: text;
+            user-select: none;
+        }
+
+        .pub-comment-write-textarea:valid + .pub-comment-write-publicar label span {
+            color: #77f;
+            cursor: pointer;
+        }
+
+        .pub-comment-write-svg {
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+
+
+
+/* Fin del contenido */
+
+/* Sugerencia */
+
+.sug {
+    flex-shrink: 1;
+    flex-grow: 2;
+    max-width: 30vw;
+}
+
+.sug__perfil {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+
+/* Cuenta Personal + Valores predeterminados de como se ven las cuentas */
+.cuenta-propia {
+    display: flex;
+    margin: 40px 0px 0px 20px;
+    width: 75%;
+}
+
+    .nombre {
+        margin-top: 7px;
+        line-height: 1rem;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nombre span:first-child {
+        color: #000;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .nombre span:nth-child(2) {
+        color: #888;
+        font-size: 12px;
+    }
+
+    .perfil {
+        color: transparent;
+        cursor: pointer;
+        user-select: none;
+        background-image: url(assets/Imagen/329011155_1284240439103930_8676510832735584473_n.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .button-perfil {
+        user-select: none;
+        cursor: pointer;
+        color: #77f;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        flex-grow: 1;
+        direction: rtl;
+    }
+
+    .nombre a {
+        color: unset;
+        text-decoration: none;
+    }
+/* Aca termina */
+/* Caja de Sugerencias */
+
+.sug__seguir {
+    margin-top: 15px;
+}
+.sugerencias {
+    width: 75%;
+    margin-left: 30px;
+    color: #666;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.sugerencias > a {
+    float: right;
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.perfil-1, .perfil-2, .perfil-3, .perfil-4, .perfil-5 {
+    margin: 15px 0;
+    display: flex;
+}
+
+.perfil-1 .perfil {
+    background-image: url(assets/Imagen/sunflower.jpg);
+    background-color: rebeccapurple;
+}
+
+.perfil-2 .perfil {
+    background-image: url(assets/Imagen/Leo.jpg);
+    background-color: rebeccapurple;
+}
+
+.perfil-3 .perfil {
+    background-image: url(assets/Imagen/Guinxu.jpg);
+    background-color: rebeccapurple;
+}
+
+.perfil-4 .perfil {
+    background-image: url(assets/Imagen/Agni.jpg);
+    background-color: rebeccapurple;
+}
+
+.perfil-5 .perfil {
+    background-image: url(assets/Imagen/329011155_1284240439103930_8676510832735584473_n.jpg);
+    background-color: rebeccapurple;
+}
+
+/* Aca termina la caja de Sugerencias */
+/* Footer */
+
+.list-container-footer {
+    line-height: 1rem;
+    width: 70%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.list-footer > a {
+    font-weight: 200;
+    color: inherit;
+    text-decoration: none;
+}
+
+.list-footer > span {
+    font-size: 0.1rem;
+    color: transparent;
+    user-select: none;
+}
+
+.copy {
+    width: 70%;
+    color: #ddd;
+    font-size: 13px;
+}
+
+/* Fin del Footer */
+/* /Sugerencia */
